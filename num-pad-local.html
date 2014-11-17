@@ -1,0 +1,60 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+##### Example
+
+    <num-pad-local></num-pad-local>
+
+@element num-pad-local
+@blurb Element providing solution to [...].
+@status [...]
+@homepage https://.../num-pad-local
+-->
+
+<polymer-element name="num-pad-local" attributes="attr">
+  <template>
+  <h1>Super duper dunder num-pad</h1>
+    <link rel="stylesheet" href="num-pad-local.css">
+
+    <div id="title">{{title}}</div>
+    <content></content>
+  </template>
+
+  <script>
+    Polymer('num-pad-local', {
+      /**
+       * The `noevent` event is not actually fired from here,
+       * we document it as an example of documenting events.
+       *
+       * @event noevent
+       */
+
+      /**
+       * The `attr` attribute does not yet have a purpose.
+       *
+       * @attribute attr
+       * @type string
+       */
+      attr: '',
+
+      ready: function() {
+      },
+
+      /**
+       * This function will be invoked every time `attr` gets changed.
+       */
+      attrChanged: function() {
+      },
+
+      /**
+       * The `task` method does [...]
+       *
+       * @method task
+       * @return {Object} Returns [...].
+       * @param {String} dummy Defines [...].
+       */
+      task: function(dummy) {
+      }
+    });
+  </script>
+</polymer-element>

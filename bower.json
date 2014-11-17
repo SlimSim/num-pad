@@ -1,0 +1,8 @@
+{
+  "name": "num-pad_local",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#master",
+    "platform": "Polymer/platform#master"
+  }
+}
