@@ -3,25 +3,29 @@
 <!--
 ##### Example
 
-    <num-pad-local></num-pad-local>
+    <num-pad></num-pad>
 
-@element num-pad-local
+@element num-pad
 @blurb Element providing solution to [...].
 @status [...]
-@homepage https://.../num-pad-local
+@homepage https://.../num-pad
 -->
 
-<polymer-element name="num-pad-local" attributes="attr">
+<polymer-element name="num-pad" attributes="attr">
   <template>
-  <h1>Super duper dunder num-pad</h1>
-    <link rel="stylesheet" href="num-pad-local.css">
+    <h1>Super duper dunder num-pad</h1>
+
+    <paper-button raised>stop</paper-button>
+
+    <link rel="stylesheet" href="num-pad.css">
+    <paper-button></paper-button>
 
     <div id="title">{{title}}</div>
     <content></content>
   </template>
 
   <script>
-    Polymer('num-pad-local', {
+    Polymer('num-pad', {
       /**
        * The `noevent` event is not actually fired from here,
        * we document it as an example of documenting events.

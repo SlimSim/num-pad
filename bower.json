@@ -1,5 +1,5 @@
 {
-  "name": "num-pad_local",
+  "name": "num-pad",
   "private": true,
   "dependencies": {
     "polymer": "Polymer/polymer#master",
