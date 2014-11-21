@@ -4,22 +4,23 @@
 <link rel="import" href="../bower_components/paper-slider/paper-slider.html">
 <link rel="import" href="../bower_components/paper-slider/paper-fab.html">
 
-<polymer-element name="num-pad" attributes="value">
+<polymer-element name="num-pad" attributes="value columns column">
   <template>
     <LINK REL="StyleSheet" HREF="num-pad.css" TYPE="text/css" >
 
-    <paper-button class="slim" flex on-click={{select}}>1</paper-button>
-    <paper-button class="slim" flex on-click={{select}}>2</paper-button>
-    <paper-button class="slim" flex on-click={{select}}>3</paper-button>
-    <paper-button class="slim" flex on-click={{select}}>4</paper-button>
-    <paper-button class="slim" flex raised on-click={{select}}>5</paper-button>
-    <paper-button class="slim" flex on-click={{select}}>6</paper-button>
-    <paper-button class="slim" flex on-click={{select}}>7</paper-button>
-    <paper-button class="slim" flex on-click={{select}}>8</paper-button>
-    <paper-button class="slim" flex on-click={{select}}>9</paper-button>
-    <paper-button class="slim" flex noink></paper-button>
-    <paper-button class="slim" flex on-click={{select}}>0</paper-button>
-    <paper-button class="slim" flex noink></paper-button>
+    <paper-button class="butt slim" flex on-click={{select}}>1</paper-button>
+    <paper-button class="butt slim" flex on-click={{select}}>2</paper-button>
+    <paper-button class="butt slim" flex on-click={{select}}>3</paper-button>
+    <paper-button class="butt slim" flex on-click={{select}}>4</paper-button>
+    <paper-button class="butt slim" flex on-click={{select}}>5</paper-button>
+    <paper-button class="butt slim" flex on-click={{select}}>6</paper-button>
+    <paper-button class="butt slim" flex on-click={{select}}>7</paper-button>
+    <paper-button class="butt slim" flex on-click={{select}}>8</paper-button>
+    <paper-button class="slim four" style="display:none" flex noink></paper-button>
+    <paper-button class="butt slim" flex on-click={{select}}>9</paper-button>
+    <paper-button class="slim three" style="display:none" flex noink></paper-button>
+    <paper-button class="butt slim" flex on-click={{select}}>0</paper-button>
+    <paper-button class="slim three four" style="display:none" flex noink></paper-button>
 
   </template>
 
