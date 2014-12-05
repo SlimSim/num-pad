@@ -1,27 +1,31 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
-<link rel="import" href="../bower_components/paper-input/paper-input.html">
-<link rel="import" href="../bower_components/paper-slider/paper-slider.html">
-<link rel="import" href="../bower_components/paper-fab/paper-fab.html">
 
-<polymer-element name="num-pad" attributes="value columns column">
+<polymer-element name="num-pad" attributes="value special">
   <template>
     <LINK REL="StyleSheet" HREF="num-pad.css" TYPE="text/css" >
+    <div>
+      <paper-button class="butt slim" flex on-click={{select}} value=1>1</paper-button>
+      <paper-button class="butt slim" flex on-click={{select}} value=2>2</paper-button>
+      <paper-button class="butt slim" flex on-click={{select}} value=3>3</paper-button>
 
-    <paper-button class="butt slim" flex on-click={{select}}>1</paper-button>
-    <paper-button class="butt slim" flex on-click={{select}}>2</paper-button>
-    <paper-button class="butt slim" flex on-click={{select}}>3</paper-button>
-    <paper-button class="butt slim" flex on-click={{select}}>4</paper-button>
-    <paper-button class="butt slim" flex on-click={{select}}>5</paper-button>
-    <paper-button class="butt slim" flex on-click={{select}}>6</paper-button>
-    <paper-button class="butt slim" flex on-click={{select}}>7</paper-button>
-    <paper-button class="butt slim" flex on-click={{select}}>8</paper-button>
-    <paper-button class="slim four" style="display:none" flex noink></paper-button>
-    <paper-button class="butt slim" flex on-click={{select}}>9</paper-button>
-    <paper-button class="slim three" style="display:none" flex noink></paper-button>
-    <paper-button class="butt slim" flex on-click={{select}}>0</paper-button>
-    <paper-button class="slim three four" style="display:none" flex noink></paper-button>
+    </div>
+    <div>
+      <paper-button class="butt slim" flex on-click={{select}} value=4>4</paper-button>
+      <paper-button class="butt slim" flex on-click={{select}} value=5>5</paper-button>
+      <paper-button class="butt slim" flex on-click={{select}} value=6>6</paper-button>
 
+    </div>
+    <div>
+      <paper-button class="butt slim" flex on-click={{select}} value=7>7</paper-button>
+      <paper-button class="butt slim" flex on-click={{select}} value=8>8</paper-button>
+      <paper-button class="butt slim" flex on-click={{select}} value=9>9</paper-button>
+    </div>
+    <div>
+      <span class="butt"></span>
+      <paper-button class="butt slim" flex on-click={{select}} value=0>{{special}}</paper-button>
+      <span class="butt"></span>
+    </div>
   </template>
 
   <script src="num-pad.js"></script>

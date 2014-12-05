@@ -5,9 +5,15 @@
   align-content: center;
 }
 
-paper-button{
-
-  min-width: 0;
+.butt{
   padding: 0;
-  width: 42px;
+  min-width: 42px;
+  margin: 0.1em 0.29em;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+div{
+  display: flex;
+  width: 100%;
 }
